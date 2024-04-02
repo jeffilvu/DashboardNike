@@ -35,8 +35,8 @@ if menu_option == "Contratos":
         st.title("Relações Contratuais")
         st.write("Confira informações sobre os contratos fechados com os atletas neste mês:")
         
-        dados_contratuais = "dados_contratuais.xlsx"
-        relacoes_contratuais = pd.read_excel(dados_contratuais)
+        dados_contratuais = "dados_contratuais.csv"
+        relacoes_contratuais = pd.read_csv(dados_contratuais)
         st.write(relacoes_contratuais)
         
         st.write("---")
